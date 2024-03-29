@@ -14,14 +14,15 @@
         <div class="conatiner">
             <nav>
                 <img src="images/logo.jpg" class="logo">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#education">Curriculum vitea </a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
-
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <h1>Hi, I'm... <br><span>Pooja</span> Maddela</h1>
@@ -142,7 +143,20 @@
                 </div>
             </div>
         </div>
+        <script>
 
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemenu.style.right = "0";
+
+            }
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+
+            }
+
+        </script>
 
 </body>
 
